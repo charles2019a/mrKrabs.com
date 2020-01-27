@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.parallax {
+
+    background-image: url("wallpaper.jpg");
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 4fr 5.5fr;
+    grid-template-rows: 0.75fr 2fr 2.7fr 0.4fr;
+    grid-template-areas:
+        "header header"
+        "window      img"
+        "img2      img2"
+        "footer  footer";
+    height: 150vh;
+    grid-row-gap: 75px;
+    grid-column-gap: 50px;
+    margin: 0 25px;
+}
+
+
+
+header {
+    grid-area: header;
+    background-color: #353333;
+    margin: 0 -25px;
+    color: white;
+}
+
+#logo {
+    width: 10%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #353333;
+    margin: -10px -25px;
+
+}
+
+#cheekyPic {
+    grid-area: img2;
+    background-color: #ff3b3b;
+    padding: 2%;
+}
+
+#krabs {
+    grid-area: img;
+    text-align: center;
+
+}
+
+
+#window {
+    grid-area: window;
+    background-color: #353333;
+
+
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+
+.dark-blue-text {
+    color: #0A38F5;
+}
+
+.dark-pink-text {
+    color: #AC003A;
+}
+
+.dark-amber-text {
+    color: #ff6f00;
+}
+
+.dark-teal-text {
+    color: #004d40;
+}
+
+/** SLIDESHOW **/
+img {
+    width: 100%;
+    /* need to overwrite inline dimensions */
+    height: auto;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+
+}
+
+.location-listing {
+    position: relative;
+}
+
+.location-image {
+    line-height: 0;
+    overflow: hidden;
+}
+
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+.location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90, 0, 10, 0.4);
+    color: white;
+
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+}
+
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+}
+@media(max-width: 700px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 4fr;
+        grid-template-rows: 0.75fr 2fr 2fr 2.7fr 0.4fr;
+        grid-template-areas:
+            "header"
+            "window"
+            "img"
+            "img2"
+            "footer";
+        height: 150vh;
+        grid-row-gap: 75px;
+        grid-column-gap: 75px;
+        margin: 0 25px;
+    }
+    #wheresMrKrabs{
+        grid-area: img;
+        text-align: center;
+        
+    
+    }
+   
+}
