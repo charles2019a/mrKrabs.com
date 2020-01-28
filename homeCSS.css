@@ -290,12 +290,11 @@ footer {
     .gridContainer {
         display: grid;
         grid-template-columns: 4fr;
-        grid-template-rows: 0.75fr 2fr 0fr 1fr 2.7fr 2fr 0.4fr;
+        grid-template-rows: 0.75fr 2fr 0fr  2.7fr 2fr 0.4fr;
         grid-template-areas:
             "header"
             "info"
             "krustyKrabImage"
-            "characterImages"
             "GalleryImages"
             "form"
             "footer";
