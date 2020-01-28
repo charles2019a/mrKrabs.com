@@ -288,4 +288,10 @@ footer {
     #suggestionHeader{
         width: 100%;
     }
+    #logo{
+        margin-top: 10px;
+    }
+    #headerText{
+        padding-bottom: 10px;
+    }
 }
