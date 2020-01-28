@@ -2,7 +2,9 @@
 <html>
 
 <head>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+   
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
@@ -45,7 +47,15 @@
 
         </section>
         <div id="characterContainer">
-            <img id="planktonImage" src="images/plankton.png">
+            <div id="gridContainer3">
+                <img id="sandyImage" src="images/plankton.png">
+                <img id="patrickImage" src="images/plankton.png">
+                <img id="squidwardImage" src="images/plankton.png">
+                <img id="krabsImage" src="images/plankton.png">
+                <img id="spongebobImage" src="images/plankton.png">
+                <img id="planktonImage" src="images/plankton.png">
+                <img id="garyImage" src="images/plankton.png">
+            </div>
         </div>
 
         <div id="galleryContainer">
@@ -134,7 +144,7 @@
             </div>
             <div class="column" id="suggestionHeader">
                 <legend>Submit Suggestion</legend>
-                <form id="contactForm" name="contact" method="POST" action="/index.html" onsubmit="success()" data-netlify="true">
+                <form id="contactForm" name="contact" method="POST" onsubmit="success()" data-netlify="true">
                     <p>
                         <input type="text" placeholder="name" name="name" required minlength="2" maxlength="12"/>
                     </p>

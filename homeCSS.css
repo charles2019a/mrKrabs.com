@@ -70,16 +70,35 @@ header {
     color: #ffff;
     padding: 12px;
 }
-
+/** Character images **/
 #characterContainer {
     grid-area: characterImages;
-    margin-top: -75px;
-    margin-bottom: -75px;
+    border: 1px solid;
 }
-
+#gridContainer3{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto; 
+}
+#sandyImage{
+    width: 70px;
+}
+#patrickImage{
+    width: 70px;
+}
+#squidwardImage{
+    width: 70px;
+}
+#krabsImage{
+    width: 70px;
+}
+#spongebobImage{
+    width: 70px;
+}
 #planktonImage {
-    margin-left: 50%;
-    width: 150px;
+    width: 70px;
+}
+#garyImage{
+    width: 70px;
 }
 
 /** GALLERY **/
