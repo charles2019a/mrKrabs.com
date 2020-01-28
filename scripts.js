@@ -1,8 +1,7 @@
 function success() {
 Swal.fire(
-    'Good job!',
-    'You clicked the button!',
+    'Success!',
+    'Thank you for your submission!',
     'success'
-  )
-    
+  )  
 }
