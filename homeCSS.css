@@ -328,4 +328,7 @@ footer {
     #headerText{
         padding-bottom: 10px;
     }
+    #characterContainer{
+        display: none;
+    }
 }
