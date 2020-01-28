@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Oswald', sans-serif;
 }
@@ -8,18 +12,12 @@ body {
 }
 
 .parallax {
-
-    background-image: url("wallpaper.jpg");
+    background-image: url("images/wallpaper.jpg");
     min-height: 500px;
-
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .gridContainer {
@@ -28,8 +26,8 @@ body {
     grid-template-rows: 0.75fr 2fr 2.7fr 1fr 2fr 0.4fr;
     grid-template-areas:
         "header     header"
-        "window     img"
-        "plank      plank"
+        "info       krustyKrabImage"
+        "characterImages      characterImages"
         "img2       img2"
         "form       form"
         "footer     footer";
@@ -39,8 +37,6 @@ body {
     margin: 0 25px;
 }
 
-
-
 header {
     grid-area: header;
     background-color: #353333;
@@ -48,7 +44,6 @@ header {
     color: white;
     text-align: center;
     box-shadow: 0px 5px 25px #353333;
-
 }
 
 #headerText {
@@ -64,135 +59,38 @@ header {
     min-width: 100px;
 }
 
-footer {
-    grid-area: footer;
-    background-color: #353333;
-    margin: -10px -25px;
-
-}
-#plank{
-    grid-area: plank;
-    margin-top: -75px;
-    margin-bottom: -75px;
-}
-#plankton{
-    margin-left: 50%;
-    width: 150px;
-}
-#cheekyPic {
-    grid-area: img2;
-    background-color: #ff3b3b;
-    padding: 2%;
-}
-
-#krabs {
-    grid-area: img;
+#krustyKrabContainer {
+    grid-area: krustyKrabImage;
     text-align: center;
-    vertical-align: middle;
-
-}
-#contain{
-    grid-area: form;
-    display: inline;
-    
-}
-#suggestion{
-
-    display: inline;
-    text-align: center;
-    color: white;  
-}
-#contact{
-    border: 3px solid white;
-    border-radius: 10px 30px 10px 30px;
-    width: fit-content;
-    padding: 20px;
-    margin: auto;
-    background-color: #ff3b3b;
-    box-shadow: 10px 10px 5px #353333;
-    table-layout: fixed;
-    
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 3px solid #353333;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #353333;
-    color:white;
-  }
-
-  input:hover, textarea:hover{
-    border: 3px solid #524a4a;
-    transition: all 0.3s;
-
-  }
-
-  textarea {
-      width: 100%;
-      min-height: 150px;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #353333;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #524a4a;
-    transition: all 0.3s;
-   
-  }
-
-#window {
-    grid-area: window;
+#informationContainer {
+    grid-area: info;
     background-color: #353333;
     color: #ffff;
     padding: 12px;
 }
 
-.fa-1x {
-    font-size: 1.5rem;
+#characterContainer {
+    grid-area: characterImages;
+    margin-top: -75px;
+    margin-bottom: -75px;
 }
 
-.navbar-toggler.toggler-example {
-    cursor: pointer;
+#planktonImage {
+    margin-left: 50%;
+    width: 150px;
 }
 
-.dark-blue-text {
-    color: #0A38F5;
+/** GALLERY **/
+#galleryContainer {
+    grid-area: img2;
+    background-color: #ff3b3b;
+    padding: 2%;
+    margin: 0 -25px;
 }
 
-.dark-pink-text {
-    color: #AC003A;
-}
-
-.dark-amber-text {
-    color: #ff6f00;
-}
-
-.dark-teal-text {
-    color: #004d40;
-}
-
-/** SLIDESHOW **/
-img {
-    width: 100%;
-    /* need to overwrite inline dimensions */
-    height: auto;
-}
-
-.grid-container2 {
+.gridContainer2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
@@ -200,6 +98,12 @@ img {
 
 .location-listing {
     position: relative;
+}
+
+img {
+    width: 100%;
+    /* need to overwrite inline dimensions */
+    height: auto;
 }
 
 .location-image {
@@ -227,7 +131,7 @@ img {
     background: rgba(90, 0, 10, 0.4);
     color: white;
 
-    /* position the text in t’ middle*/
+    /* position the text in middle*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,6 +147,92 @@ img {
     filter: blur(2px);
 }
 
+/** GALLERY END**/
+
+
+/** FORM **/
+#suggestionContainer {
+    grid-area: form;
+    display: inline;
+}
+
+#suggestionHeader {
+    display: inline;
+    text-align: center;
+    color: white;
+}
+
+#contactForm {
+    border: 3px solid white;
+    border-radius: 10px 30px 10px 30px;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    background-color: #ff3b3b;
+    box-shadow: 10px 10px 5px #353333;
+    table-layout: fixed;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #353333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #353333;
+    color: white;
+}
+
+input:hover,
+textarea:hover {
+    border: 3px solid #524a4a;
+    transition: all 0.3s;
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #353333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #524a4a;
+    transition: all 0.3s;
+
+}
+
+/** FORM END **/
+
+footer {
+    grid-area: footer;
+    background-color: #353333;
+    margin: -30px -25px;
+    text-align: center;
+}
+
+#footerText {
+    color: white;
+    height: 100%;
+    display: inline-block;
+    line-height: 60px;
+    opacity: 0.7;
+}
+
+/** OTHER DEVICES **/
 @media(max-width: 850px) {
     .gridContainer {
         display: grid;
@@ -250,9 +240,9 @@ img {
         grid-template-rows: 0.75fr 2fr 2fr 1fr 2.7fr 2fr 0.4fr;
         grid-template-areas:
             "header"
-            "window"
-            "img"
-            "plank"
+            "info"
+            "krustyKrabImage"
+            "characterImages"
             "img2"
             "form"
             "footer";
@@ -261,37 +251,4 @@ img {
         grid-column-gap: 75px;
         margin: 0 25px;
     }
-
-    #wheresMrKrabs {
-        grid-area: img;
-        text-align: center;
-    }
-
-    #cheekyPic {
-        grid-area: img2;
-        background-color: #ff3b3b;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #krabs {
-        grid-area: img;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: -10%;
-        width: 100%;
-    }
-
-    #cheekyPic {
-        object-fit: contain;
-        width: 100%;
-    }
-    #plankton{
-        margin-left: 15%;
-        width: 150px;
-    }
-
 }
