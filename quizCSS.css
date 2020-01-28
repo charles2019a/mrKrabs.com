@@ -1,0 +1,9 @@
+.parallax2 {
+    background-image: url("images/quizWallpaper.jpg");
+    background-color: #71e2e6;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}

@@ -4,32 +4,39 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="sweetalert2.all.min.js"></script>
-   
+
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="homeCSS.css">
     <link rel="icon" href="images/mrKrabLogo.png">
     <script rel="text/javascript" src="scripts.js"></script>
-    
+  
     <title>Mr Krabs - HomePage</title>
 </head>
 
 <body class="parallax">
     <div class="gridContainer">
         <header>
-            <a href="index.html">
+            <a href="index.html" title="Back to Homepage" style="text-decoration: none;">
                 <img id="logo" src="images/noBackKrab.png" alt="Logo">
             </a>
-            <h1 id="headerText">MrKrabs.com</h1>
+            <h1 id="headerText">
+                MrKrabs.com
+            </h1>
+            <div id="btnContainer">
+                <a href="/quiz.html" data-transition="overlap"><button class="btn btn-1">Play Quiz</button></a>
+            </div>
         </header>
+        
         <div id="krustyKrabContainer">
             <img src="images/krustyNoBackNoBackKrabsNoBack.png">
         </div>
-
+        
         <section id="informationContainer"> Eugene Harold Krabs, simply and more commonly referred to as Mr. Krabs,
             is a fictional character in the American animated television series SpongeBob SquarePants. He is voiced by
             actor Clancy Brown and first appeared in the series' pilot episode "Help Wanted" on May 1, 1999. The
@@ -47,14 +54,26 @@
 
         </section>
         <div id="characterContainer">
-            <div id="gridContainer3">
-                <img id="sandyImage" src="images/sandy.png">
-                <img id="patrickImage" src="images/patrick.png">
-                <img id="squidwardImage" src="images/squidward.png">
-                <img id="krabsImage" src="images/mrkrabs.png">
-                <img id="spongebobImage" src="images/spongebob.png">
-                <img id="planktonImage" src="images/planktonWithBurger.png">
-                <img id="garyImage" src="images/gary.png">
+            <div class="imageColumn">
+                <img id="sandyImage" src="Images/sandy.png">
+            </div>
+            <div class="imageColumn">
+                <img id="patrickImage" src="Images/patrick.png">
+            </div>
+            <div class="imageColumn">
+                <img id="squidwardImage" src="Images/squidward.png">
+            </div>
+            <div class="imageColumn">
+                <img id="krabsImage" src="Images/mrKrabs.png">
+            </div>
+            <div class="imageColumn">
+                <img id="spongebobImage" src="Images/spongebob.png">
+            </div>
+            <div class="imageColumn">
+                <img id="planktonImage" src="Images/planktonWithBurger.png">
+            </div>
+            <div class="imageColumn">
+                <img id="garyImage" src="Images/gary.png">
             </div>
         </div>
 
@@ -172,7 +191,6 @@
             </div>
         </footer>
     </div>
-
 
 </body>
 

@@ -44,6 +44,7 @@ header {
     color: white;
     text-align: center;
     box-shadow: 0px 5px 25px #353333;
+    
 }
 
 #headerText {
@@ -59,6 +60,33 @@ header {
     min-width: 100px;
 }
 
+#btnContainer {
+    position: relative;
+    top: -8px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #353333;
+    border-radius: 10px;
+   }
+  
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color:white;
+  }
+  
+  .btn-1 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  }
+
 #krustyKrabContainer {
     grid-area: krustyKrabImage;
     text-align: center;
@@ -73,49 +101,54 @@ header {
 /** Character images **/
 #characterContainer {
     grid-area: characterImages;
-    margin-bottom: -70px;
-    margin-top: -60px;
+    margin-bottom: -75px;
+    margin-top: -25px;
+    height: 125px;
+    position: relative;
 }
-#gridContainer3{
-    display: grid;
-    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr; 
-    grid-column-gap: 50px;
+.imageColumn{
+    width: 14.28%;
+    float: left;
+    padding-left: 5%;
+    height: 125px;
 }
 #sandyImage{
-    align-self: end;
-    width: 85px;
-    border: 1px solid;
+    position: absolute;
+    bottom: 0;
+    width: 95px;
 }
 #patrickImage{
-    align-self: end;
-    width: 85px;
-    border: 1px solid;
+    position: absolute;
+    bottom: 0;
+    width: 80px;
 }
 #squidwardImage{
-    align-self: end;
-    width: 50px;
-    border: 1px solid;
+    position: absolute;
+    bottom: 0;
+    width: 45px;
 }
 #krabsImage{
-    align-self: end;
+    position: absolute;
+    bottom: 0;
     width: 85px;
-    border: 1px solid;
 }
 #spongebobImage{
-    align-self: end;
+    position: absolute;
+    bottom: 0;
     width: 85px;
-    border: 1px solid;
 }
 #planktonImage {
-    align-self: end;
+    position: absolute;
+    bottom: 0;
     width: 85px;
-    border: 1px solid;
 }
 #garyImage{
-    align-self: end;
+    position: absolute;
+    bottom: 0;
     width: 85px;
-    border: 1px solid;
 }
+
+/** end of Character Images **/
 
 /** GALLERY **/
 #galleryContainer {
