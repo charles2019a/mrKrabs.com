@@ -25,12 +25,12 @@ body {
     grid-template-columns: 6fr 5.5fr;
     grid-template-rows: 0.75fr 2fr 2.7fr 1fr 2fr 0.4fr;
     grid-template-areas:
-        "header     header"
-        "info       krustyKrabImage"
-        "characterImages      characterImages"
-        "img2       img2"
-        "form       form"
-        "footer     footer";
+        "header           header"
+        "info                krustyKrabImage"
+        "characterImages          characterImages"
+        "GalleryImages           GalleryImages"
+        "form                   form"
+        "footer                 footer";
     height: 150vh;
     grid-row-gap: 75px;
     grid-column-gap: 50px;
@@ -84,20 +84,27 @@ header {
 
 /** GALLERY **/
 #galleryContainer {
-    grid-area: img2;
+    grid-area: GalleryImages;
     background-color: #ff3b3b;
-    padding: 2%;
+    padding: 2.5%;
     margin: 0 -25px;
 }
 
 .gridContainer2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 1.5em;
 }
 
 .location-listing {
     position: relative;
+    border: 3.5px solid white;
+
+}
+
+.location-listing:hover {
+    box-shadow: 10px 10px 10px #353333;
+    transition: 0.5s;
 }
 
 img {
@@ -148,6 +155,11 @@ img {
 }
 
 /** GALLERY END**/
+
+.column {
+    float: left;
+    width: 33.33%;
+}
 
 
 /** FORM **/
@@ -217,6 +229,12 @@ input[type=submit]:hover {
 
 /** FORM END **/
 
+
+#jellyfishImage {
+    width: 300px;
+    padding-top: 35%;
+}
+
 footer {
     grid-area: footer;
     background-color: #353333;
@@ -233,22 +251,41 @@ footer {
 }
 
 /** OTHER DEVICES **/
-@media(max-width: 850px) {
+@media(max-width: 775px) {
     .gridContainer {
         display: grid;
         grid-template-columns: 4fr;
-        grid-template-rows: 0.75fr 2fr 2fr 1fr 2.7fr 2fr 0.4fr;
+        grid-template-rows: 0.75fr 2fr 0fr 1fr 2.7fr 2fr 0.4fr;
         grid-template-areas:
             "header"
             "info"
             "krustyKrabImage"
             "characterImages"
-            "img2"
+            "GalleryImages"
             "form"
             "footer";
         height: 150vh;
         grid-row-gap: 75px;
         grid-column-gap: 75px;
         margin: 0 25px;
+    }
+
+    #galleryContainer {
+        grid-area: GalleryImages;
+        background-color: #ff3b3b;
+        padding: 10%;
+        margin: 0 -25px;
+    }
+
+    /* only purpose is to be reponsive */
+    #krustyKrabContainer {
+        display: none;
+    }
+    #test, test1{
+        display: none;
+        width: 0%;
+    }
+    #suggestionHeader{
+        width: 100%;
     }
 }
