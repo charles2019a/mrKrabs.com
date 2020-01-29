@@ -105,8 +105,9 @@ header {
     color: #ffff;
     padding: 12px;
 }
-#readMore{
-    color:aqua;
+
+#readMore {
+    color: aqua;
 }
 
 /** Character images **/
@@ -388,7 +389,7 @@ footer {
             "info"
             "krustyKrabImage"
             "GalleryImages"
-        
+
             "form"
             "footer";
         height: 150vh;
@@ -408,7 +409,7 @@ footer {
     #krustyKrabContainer {
         display: none;
     }
- 
+
     #suggestionHeader {
         width: 100%;
     }

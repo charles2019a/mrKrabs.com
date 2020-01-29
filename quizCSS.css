@@ -1,9 +1,22 @@
 .parallax2 {
-    background-image: url("images/quizWallpaper.jpg");
+    background-image: url("images/quizWallpaper.webp");
     background-color: #71e2e6;
     background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
     background-size: 70%;
+}
+.quizContainer {
+    display: grid;
+    grid-template-columns: 2.5fr 8fr 2.5fr;
+    grid-template-rows: 0.75fr 4.3fr 0.2fr;
+    grid-template-areas:
+        "header  header   header"
+        "quiz   quiz    quiz"
+        "footer   footer  footer";
+        height: auto;
+    grid-row-gap: 75px;
+    grid-column-gap: 50px;
+    margin: 0 25px;
 }
