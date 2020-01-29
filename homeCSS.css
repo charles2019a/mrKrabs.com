@@ -44,7 +44,7 @@ header {
     color: white;
     text-align: center;
     box-shadow: 0px 5px 25px #353333;
-    
+
 }
 
 #headerText {
@@ -76,20 +76,27 @@ header {
     color: white;
     box-shadow: 0 0 20px #353333;
     border-radius: 10px;
-   }
-  
-  .btn:hover {
-    background-position: right center; /* change the direction of the change here */
-    color:white;
-  }
-  
-  .btn-1 {
+}
+
+.btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: white;
+}
+
+.btn-1 {
     background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
-  }
+}
 
 #krustyKrabContainer {
     grid-area: krustyKrabImage;
     text-align: center;
+}
+
+#krustyKrabImage {
+    width: 110%;
+    margin-left: -50px;
+    margin-top: 20px;
 }
 
 #informationContainer {
@@ -98,6 +105,7 @@ header {
     color: #ffff;
     padding: 12px;
 }
+
 /** Character images **/
 #characterContainer {
     grid-area: characterImages;
@@ -106,43 +114,51 @@ header {
     height: 125px;
     position: relative;
 }
-.imageColumn{
+
+.imageColumn {
     width: 14.28%;
     float: left;
     padding-left: 5%;
     height: 125px;
 }
-#sandyImage{
+
+#sandyImage {
     position: absolute;
     bottom: 0;
     width: 95px;
 }
-#patrickImage{
+
+#patrickImage {
     position: absolute;
     bottom: 0;
     width: 80px;
 }
-#squidwardImage{
+
+#squidwardImage {
     position: absolute;
     bottom: 0;
     width: 45px;
 }
-#krabsImage{
+
+#krabsImage {
     position: absolute;
     bottom: 0;
     width: 85px;
 }
-#spongebobImage{
+
+#spongebobImage {
     position: absolute;
     bottom: 0;
     width: 85px;
 }
+
 #planktonImage {
     position: absolute;
     bottom: 0;
     width: 85px;
 }
-#garyImage{
+
+#garyImage {
     position: absolute;
     bottom: 0;
     width: 85px;
@@ -162,6 +178,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1.5em;
+
 }
 
 .location-listing {
@@ -323,7 +340,7 @@ footer {
     .gridContainer {
         display: grid;
         grid-template-columns: 4fr;
-        grid-template-rows: 0.75fr 2fr 0fr  2.7fr 2fr 0.4fr;
+        grid-template-rows: 0.75fr 2fr 0fr 2.7fr 2fr 0.4fr;
         grid-template-areas:
             "header"
             "info"
@@ -348,20 +365,52 @@ footer {
     #krustyKrabContainer {
         display: none;
     }
-    #test, test1{
+
+    #test,
+    test1 {
         display: none;
         width: 0%;
     }
-    #suggestionHeader{
+
+    #suggestionHeader {
         width: 100%;
     }
-    #logo{
+
+    #logo {
         margin-top: 10px;
     }
-    #headerText{
+
+    #headerText {
         padding-bottom: 10px;
     }
-    #characterContainer{
+
+    #characterContainer {
         display: none;
     }
+}
+
+@media(min-width: 1750px) {
+
+    #informationContainer {
+        grid-area: info;
+        background-color: #353333;
+        color: #ffff;
+        padding: 12px;
+        font-size: 24px;
+    }
+
+    #galleryContainer {
+        grid-area: GalleryImages;
+        background-color: #ff3b3b;
+        padding: 1%;
+    }
+
+    .gridContainer2 {
+        display: grid;
+    grid-template-rows: 171px;
+    grid-template-columns: repeat(6, 300px);
+    grid-column-gap: 50px;
+    justify-content: center;
+    }
+    
 }

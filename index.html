@@ -8,35 +8,35 @@
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
-     
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="homeCSS.css">
     <link rel="icon" href="images/mrKrabLogo.png">
     <script rel="text/javascript" src="scripts.js"></script>
-  
+
     <title>Mr Krabs - HomePage</title>
 </head>
 
 <body class="parallax">
+
     <div class="gridContainer">
         <header>
-            <a href="index.html" title="Back to Homepage" style="text-decoration: none;">
+            <a href="/index.html" title="Back to Homepage" style="text-decoration: none;">
                 <img id="logo" src="images/noBackKrab.png" alt="Logo">
             </a>
             <h1 id="headerText">
                 MrKrabs.com
             </h1>
             <div id="btnContainer">
-                <a href="/quiz.html" data-transition="overlap"><button class="btn btn-1">Play Quiz</button></a>
+                <a href="/quiz.html"><button class="btn btn-1">Play Quiz</button></a>
             </div>
         </header>
-        
         <div id="krustyKrabContainer">
-            <img src="images/krustyNoBackNoBackKrabsNoBack.png">
+            <img id="krustyKrabImage" src="images/krustyNoBackNoBackKrabsNoBack.png">
         </div>
-        
+
         <section id="informationContainer"> Eugene Harold Krabs, simply and more commonly referred to as Mr. Krabs,
             is a fictional character in the American animated television series SpongeBob SquarePants. He is voiced by
             actor Clancy Brown and first appeared in the series' pilot episode "Help Wanted" on May 1, 1999. The
@@ -124,11 +124,10 @@
                         <a href="">
                             <img width="300" height="169" src="images/krab4.jpg" alt="Mr Krabs"> </a>
 
-
-
                     </div>
-                   
+
                 </span>
+                
                 <span class="location-listing">
 
                     <a class="location-title" href="#/">
@@ -153,19 +152,20 @@
                             <img width="300" height="169" src="images/krab6.jpg" alt="Krabs and Plankton"> </a>
 
                     </div>
-                    </span>
+                </span>
             </div>
         </div>
 
         <div id="suggestionContainer">
-            <div id="test1" class="column"> 
+            <div id="test1" class="column">
                 <span> <br> </span>
             </div>
             <div class="column" id="suggestionHeader">
                 <legend>Submit Suggestion</legend>
-                <form id="contactForm" name="contact" method="POST" onsubmit="success();return false" data-netlify="true">
+                <form id="contactForm" name="contact" method="POST" onsubmit="success();return false"
+                    data-netlify="true">
                     <p>
-                        <input type="text" placeholder="name" name="name" required minlength="2" maxlength="12"/>
+                        <input type="text" placeholder="name" name="name" required minlength="2" maxlength="12" />
                     </p>
                     <p>
                         <input type="email" placeholder="email (optional)" name="email" />
@@ -180,10 +180,9 @@
                 </form>
             </div>
             <div id="test" class="column">
-                    <img id="jellyfishImage" src="images/jellyfish.png">
+                <img id="jellyfishImage" src="images/jellyfish.png">
             </div>
         </div>
-        
 
         <footer>
             <div id="footerText">
