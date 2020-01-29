@@ -385,6 +385,7 @@ footer {
             "info"
             "krustyKrabImage"
             "GalleryImages"
+        
             "form"
             "footer";
         height: 150vh;
@@ -404,13 +405,7 @@ footer {
     #krustyKrabContainer {
         display: none;
     }
-
-    #test,
-    test1 {
-        display: none;
-        width: 0%;
-    }
-
+ 
     #suggestionHeader {
         width: 100%;
     }
