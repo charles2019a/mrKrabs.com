@@ -128,10 +128,24 @@ header {
     width: 95px;
 }
 
+#sandyImage:hover {
+    transform-origin: bottom;
+    transform: scale(1.5);
+
+}
+
 #patrickImage {
     position: absolute;
     bottom: 0;
     width: 80px;
+}
+
+#patrickImage:hover {
+    transform: scale(2.1);
+    transform-origin: bottom;
+    content: url("Images/patrickHover.png");
+    padding-bottom: 1px;
+
 }
 
 #squidwardImage {
@@ -140,10 +154,20 @@ header {
     width: 45px;
 }
 
+#squidwardImage:hover {
+    transform: scale(1.5);
+    transform-origin: bottom;
+}
+
 #krabsImage {
     position: absolute;
     bottom: 0;
     width: 85px;
+}
+
+#krabsImage:hover {
+    transform: scale(1.5);
+    transform-origin: bottom;
 }
 
 #spongebobImage {
@@ -152,16 +176,31 @@ header {
     width: 85px;
 }
 
+#spongebobImage:hover {
+    transform: scale(1.5);
+    transform-origin: bottom;
+}
+
 #planktonImage {
     position: absolute;
     bottom: 0;
     width: 85px;
 }
 
+#planktonImage:hover {
+    transform: scale(1.5);
+    transform-origin: bottom;
+}
+
 #garyImage {
     position: absolute;
     bottom: 0;
     width: 85px;
+}
+
+#garyImage:hover {
+    transform: scale(1.5);
+    transform-origin: bottom;
 }
 
 /** end of Character Images **/
@@ -407,10 +446,10 @@ footer {
 
     .gridContainer2 {
         display: grid;
-    grid-template-rows: 171px;
-    grid-template-columns: repeat(6, 300px);
-    grid-column-gap: 50px;
-    justify-content: center;
+        grid-template-rows: 171px;
+        grid-template-columns: repeat(6, 300px);
+        grid-column-gap: 50px;
+        justify-content: center;
     }
-    
+
 }
