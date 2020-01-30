@@ -33,13 +33,12 @@ function unhover(){
 
 function hoverEffectP(){
   if(censored){
-    document.getElementById('censorBarPhone').style.display = "block";
+    document.getElementById('patrickImagePhone').src = "Images/patrickHoverSWF.webp";
   } else{
-    document.getElementById('censorBarPhone').style.display = "none";
+    document.getElementById('patrickImagePhone').src = "Images/patrickHover.webp";
   }
-  document.getElementById('patrickImagePhone').src = "Images/patrickHover.webp";
 }
 function unhoverP(){
-  document.getElementById('censorBarPhone').style.display = "none";
+
   document.getElementById('patrickImagePhone').src = "Images/patrick.webp";
 }
