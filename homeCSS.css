@@ -542,7 +542,7 @@ footer {
         padding-top: 60px;
     }
 
-    #patrickImagePhone:hover{
+    #patrickImagePhone:hover, patrickIgamePhone:active{
         transform: scale(2.1);
         transform-origin: bottom;
         padding-top: 114px;
