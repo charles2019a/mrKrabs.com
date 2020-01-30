@@ -545,7 +545,6 @@ footer {
     #patrickImagePhone:hover{
         transform: scale(2.1);
         transform-origin: bottom;
-        content: url("Images/patrickHover.webp");
         padding-top: 114px;
     }
 

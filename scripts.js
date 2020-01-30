@@ -37,7 +37,9 @@ function hoverEffectP(){
   } else{
     document.getElementById('censorBarPhone').style.display = "none";
   }
+  document.getElementById('patrickImagePhone').src = "Images/patrickHover.webp";
 }
 function unhoverP(){
   document.getElementById('censorBarPhone').style.display = "none";
+  document.getElementById('patrickImagePhone').src = "Images/patrick.webp";
 }
