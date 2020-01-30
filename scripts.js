@@ -8,52 +8,40 @@ function success() {
 
 let censored = "true";
 
-function toggleSWF() {
-  if (document.getElementById('switch').checked) {
+function toggleSWF(){
+  if(document.getElementById('switch').checked){
     censored = false;
     document.getElementById('NSFW').style.color = "#ff3b3b"
     document.getElementById('SFW').style.color = "#ffff"
-  } else {
+  } else{
     censored = true;
     document.getElementById('SFW').style.color = "#2196F3"
     document.getElementById('NSFW').style.color = "#ffff"
   }
 }
 
-function hoverEffect() {
-  if (censored) {
+function hoverEffect(){
+  if(censored){
     document.getElementById('censorBar').style.display = "block";
-  } else {
+  } else{
     document.getElementById('censorBar').style.display = "none";
   }
 }
-
-function unhover() {
+function unhover(){
   document.getElementById('censorBar').style.display = "none";
 }
 
-
-
-function hoverEffectP() {
+function hoverEffectP(){
   let patrick = document.getElementById('patrickImagePhone');
-  if (censored) {
+  if(censored){
     patrick.src = "Images/patrickHoverSWF.webp";
-  } else {
+  } else{
     patrick.src = "Images/patrickHover.webp";
   }
 
-  patrick.style.width = "201px";
-  patrick.style.marginLeft = "-18%";
-  patrick.style.marginTop = "-17.5%";
-
-
 
 }
+function unhoverP(){
 
-function unhoverP() {
-  let patrick = document.getElementById('patrickImagePhone');
-
-  patrick.src = "Images/patrick.webp";
-  patrick.style.width = "100px";
-  patrick.style.margin = "0";
+  document.getElementById('patrickImagePhone').src = "Images/patrick.webp";
 }
