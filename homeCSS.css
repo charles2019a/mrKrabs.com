@@ -53,17 +53,17 @@ header {
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -73,9 +73,9 @@ header {
     background-color: #2196F3;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -85,43 +85,47 @@ header {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #ff3b3b;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #ff3b3b;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
+}
+
 .slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
+
 /** end of checkbox **/
 
-#toggleBar{
+#toggleBar {
     display: inline-block;
     position: relative;
     vertical-align: middle;
     margin-left: 10px;
 }
-.labelText{
+
+.labelText {
     font-size: 18px;
     font-weight: 500;
     padding-top: 50px;
     margin-top: 50px;
 }
-#SFW{
+
+#SFW {
     color: #2196F3;
 }
 
@@ -228,7 +232,8 @@ header {
     content: url("Images/patrickHover.webp");
     padding-bottom: 1px;
 }
-#censorBar{
+
+#censorBar {
     position: absolute;
     background-color: black;
     text-align: center;
@@ -488,7 +493,8 @@ footer {
         grid-column-gap: 75px;
         margin: 0 25px;
     }
-    #toggleBar{
+
+    #toggleBar {
         position: relative;
         vertical-align: middle;
         padding-bottom: 5%;
@@ -521,34 +527,37 @@ footer {
     #characterContainer {
         display: none;
     }
+
     #patrickStar {
         grid-area: patrickStar;
         display: block;
         height: 165px;
         margin-bottom: -125px;
         margin-top: -150px;
-        text-align: center;
-        
+        margin-left: calc(50% - 50px);
     }
+
     #patrickImagePhone {
         width: 100px;
         padding-top: 60px;
     }
-    #patrickImagePhone:hover {
+
+    #patrickImagePhone:hover,
+    patrickImagePhone:focus {
         transform: scale(2.1);
         transform-origin: bottom;
         content: url("Images/patrickHover.webp");
         padding-top: 114px;
     }
-    #censorBarPhone{
+
+    #censorBarPhone {
         position: absolute;
         background-color: black;
         text-align: center;
         color: white;
         font-weight: bold;
         margin-top: -40px;
-        margin-left: 37.5%;
-        width: 85px;
+        width: 100px;
         text-decoration: none;
     }
 }
