@@ -152,6 +152,10 @@ header {
 
 }
 
+#patrickStar {
+    display: none;
+}
+
 #squidwardImage {
     position: absolute;
     bottom: 0;
@@ -383,13 +387,13 @@ footer {
     .gridContainer {
         display: grid;
         grid-template-columns: 4fr;
-        grid-template-rows: 0.75fr 2fr 0fr 2.7fr 2fr 0.4fr;
+        grid-template-rows: 0.75fr 2fr 0fr 2fr 2.7fr 2fr 0.4fr;
         grid-template-areas:
             "header"
             "info"
             "krustyKrabImage"
+            "patrickStar"
             "GalleryImages"
-
             "form"
             "footer";
         height: 150vh;
@@ -424,6 +428,26 @@ footer {
 
     #characterContainer {
         display: none;
+    }
+    #patrickStar {
+        grid-area: patrickStar;
+        display: block;
+        height: 165px;
+        margin-bottom: -125px;
+        margin-top: -150px;
+        text-align: center;
+        
+    }
+    #patrickImagePhone {
+        width: 100px;
+        padding-top: 60px;
+    }
+    #patrickImagePhone:hover {
+        transform: scale(2.1);
+        transform-origin: bottom;
+        content: url("Images/patrickHover.webp");
+        padding-top: 114px;
+    
     }
 }
 

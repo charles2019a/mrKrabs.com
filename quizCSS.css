@@ -7,16 +7,100 @@
     background-repeat: no-repeat;
     background-size: 70%;
 }
+
 .quizContainer {
     display: grid;
-    grid-template-columns: 2.5fr 8fr 2.5fr;
-    grid-template-rows: 0.75fr 4.3fr 0.2fr;
+    grid-template-columns: 2.5fr 7fr 2.5fr;
+    grid-template-rows: 0.75fr 4.5fr 1fr 0.2fr;
     grid-template-areas:
         "header  header   header"
-        "quiz   quiz    quiz"
+        "left   quiz    right"
+        "leftSpace   submit    results"
         "footer   footer  footer";
-        height: auto;
-    grid-row-gap: 75px;
+    height: 100vh;
+    grid-row-gap: 50px;
     grid-column-gap: 50px;
     margin: 0 25px;
+}
+
+#quiz {
+    grid-area: quiz;
+    padding: 2em;
+    background-color: #ff3b3b;
+
+    font-size: 24px;
+    color: #ffff;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1em;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+
+
+.frame{
+  width: 200px;
+  height: 200px;
+
+  border: #2e1a12 solid 8px;
+  -webkit-border-image: url(C:\Users\Admin\Documents\mrKrabs.com\Images) 200 stretch;
+  -moz-border-image: url(C:\Users\Admin\Documents\mrKrabs.com\Images) 200 stretch;
+  border-image: url(C:\Users\Admin\Documents\mrKrabs.com\Images) 200 stretch;
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+}
+
+
+
+
+
+
+#results {
+    grid-area: results;
+}
+
+#submit {
+    grid-area: submit;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#left {
+    grid-area: left;
+}
+
+#sidePatrick {
+    width: 90%;
+}
+
+#sideSpongebob {
+    width: 125%;
+}
+
+#right {
+    grid-area: right;
+}
+
+#leftSpace {
+    grid-area: leftSpace;
 }
