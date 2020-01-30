@@ -24,6 +24,22 @@
 
     <div class="gridContainer">
         <header>
+            <div id="toggleBar">
+                <span id="SFW" class="labelText">
+                    SFW
+                </span>
+
+                <label class="switch">
+                    <input onclick="toggleSWF()" id="switch" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+                <span id="NSFW" class="labelText">
+                    NSFW
+                </span>
+            </div>
+
+
             <a href="/index.html" title="Back to Homepage" style="text-decoration: none;">
                 <img id="logo" src="Images/noBackKrab.webp" alt="Logo">
             </a>
@@ -55,9 +71,10 @@
 
         </section>
         <div id="patrickStar">
-            <a href="#/">
-                <img id="patrickImagePhone" src="Images/patrick.webp">
-            </a> 
+            <a id="href=" #/"> 
+                <img onmouseover="hoverEffectP()" onmouseout="unhoverP()" id="patrickImagePhone" src="Images/patrick.webp">
+            </a>
+            <div id="censorBarPhone" style="display: none;">Censored</div>
         </div>
 
         <div id="characterContainer">
@@ -66,10 +83,11 @@
                     <img id="sandyImage" src="Images/sandy.webp">
                 </a>
             </div>
-            <div  class="imageColumn">
+            <div class="imageColumn">
                 <a href="#/">
-                    <img id="patrickImage" src="Images/patrick.webp">
+                    <img onmouseover="hoverEffect()" onmouseout="unhover()" id="patrickImage" src="Images/patrick.webp">
                 </a>
+                <div id="censorBar" style="display: none;">Censored</div>
             </div>
             <div class="imageColumn">
                 <a href="#/">
