@@ -111,6 +111,9 @@ header {
 
 #toggleBar{
     display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 .labelText{
     font-size: 18px;
@@ -484,6 +487,11 @@ footer {
         grid-row-gap: 75px;
         grid-column-gap: 75px;
         margin: 0 25px;
+    }
+    #toggleBar{
+        position: relative;
+        vertical-align: middle;
+        padding-bottom: 5%;
     }
 
     #galleryContainer {
